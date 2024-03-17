@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Playfair Display", sans-serif !important;
+}
+body {
+  &::-webkit-scrollbar {
+    width: 12px;
+    background: rgba(255, 255, 255, 0) !important;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0) !important;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #222222 !important;
+    border-radius: 0px !important;
+  }
+
+  &::-webkit-scrollbar-button:vertical:start:decrement {
+    display: none !important;
+  }
+
+  &::-webkit-scrollbar-button:vertical:end:increment {
+    display: none !important;
+  }
+}
+
+@mixin hidden {
+  display: none;
+  overflow: hidden;
+  opacity: 0;
+  height: 0;
+  width: 0;
+  transform: scale(0);
+  cursor: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  user-select: none;
+}
+
+input,
+button,
+textarea {
+  border: none;
+  outline: none;
+}
